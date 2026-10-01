@@ -3,15 +3,16 @@ console.log(document.querySelector('.infocard'))
 //1.
 document.getElementById('gen-1').innerHTML="Generasión 1 Pokimon"
 //2.
-const fotos = document.querySelectorAll("body > main > div:nth-child(6) img")
-//document.querySelector('.infocard-list-pkmn-lg').style.backgroundColor = 'yellow';
-//3.
-console.log(fotos)
+const fotos = document.querySelectorAll(" body>main > div:nth-child(6)" ) //No hace falta iniciar la ruta desde body>main > div:nth-child(6) img"
+
+//document.querySelector('.infocard-list-pkmn-lg').style.backgroundColor = 'yellow'; // la forma correcta de escribirlo
+
 
 for (let i = 0; i < fotos.length; i++) {
   fotos[i].style.backgroundColor ="yellow";
-
-}
+} 
+console.log(fotos)
+//3.
 //body > main > div:nth-child(9)
 
 const generation2 = document.querySelector("body > main > div:nth-child(9) img")
@@ -23,17 +24,18 @@ for (let i=0; i< generation2.length; i++){
 }
 console.log(generation2)
 
-
-
 //4.
-console.log(window.location.href);//Imprimo dominio pagina
+console.log(window.location.href);//Imprimo dominio pagina index http://127.0.0.1:5501/index.html
 
 //5.
-/*onst nodo = document.querySelector('.infocard-list');
 
-nodo.childNodes.forEach(child => {
-  console.log(child);
-});*/
+
+console.log(document.querySelectorAll("img"))
+//onst nodo = document.querySelector('.infocard-list');
+
+//nodo.childNodes.forEach(child => {
+ // console.log(child);
+//});*/
 
 document.querySelectorAll('.img-sprite').forEach(img =>{
     console.log(img.src);
